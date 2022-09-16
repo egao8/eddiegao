@@ -1,0 +1,159 @@
+
+
+body{
+    background-color: #F8F8F8!important;
+    font-family: 'Courier New', monospace;
+}
+
+#profile-wrapper{
+	text-align: center;
+}
+
+#profile-pic{
+	width:250px;
+	height: 250px;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#topnav
+{
+	text-align: right;
+}
+
+*{
+
+    padding:0.8% /* or whatever */
+ }
+
+ul{
+	padding: 0;
+    list-style-type: none;
+}
+
+.heading
+{
+	padding-top: 1 px;
+}
+
+.social-links ul, li{
+	list-style-type:none;
+	display: inline-block;
+}
+
+.social{
+	width:20px;
+	height: 20px;
+}
+
+h4 {
+    font-family: "andale mono", monospace;
+}
+
+h3 {
+    font-family: "andale mono", monospace;
+}
+
+
+
+p {
+    font-family: "Monaco", monospace;
+}
+
+h5 {
+    font-family: "Monaco", monospace;
+}
+
+
+@keyframes showTopText {
+	0% { transform: translate3d(0, 100%, 0); }
+	40%, 60% { transform: translate3d(0, 50%, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+	
+}
+@keyframes showBottomText {
+	0% { transform: translate3d(0, -100%, 0); }
+	100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+	color: #222;
+	font-family: 'Courier New', monospace;
+	height: 90vmin;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 175vmin;
+}
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	
+}
+.animated-title > div div {
+	font-size: 15vmin;
+	padding: 2vmin 0;
+	position: absolute;
+	
+}
+.animated-title > div div span {
+	display: block;
+	
+}
+.animated-title > div.text-top {
+	border-bottom: 1vmin solid #000;
+	top: 0;
+
+}
+.animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	bottom: 0;
+	transform: translate(0, 100%);
+	
+}
+
+
+.animated-title > div.text-bottom {
+	bottom: 0;
+}
+.animated-title > div.text-bottom div {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+}
+
+
+.wrapper {
+	height: 10vh;
+	/*This part is important for centering*/
+	display: grid;
+	place-items: left;
+  }
+  
+  .typing-demo {
+	width: 37ch;
+	animation: typing 1.7s steps(30), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: monospace;
+	font-size: 2em;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	}
+  }
